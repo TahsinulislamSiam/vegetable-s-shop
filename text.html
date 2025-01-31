@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+    .font-sora{
+        font-family: "Open Sans", serif;
+    }
+    html{
+        color-scheme: light;
+    }
+</style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'common-color': '#FFFFFF'
+             'common-color-bg': '#EFEBE3'
+             'card-color':'#EFEBE3'
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body class="font-sora">
+  
+    <!--header section-->
+    <header class="md:container mx-auto">
+        <nav class="max-w-screen-xl mx-auto px-8 lg:px-15">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Product</a></li>
+                    
+                      <li><a>Services</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <img class="mt-4" src="./c2-assets/logo-header.png"/>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>contact us</a></li>
+                  </ul>
+                </div>
+              
+                <div class="navbar-end">
+                    
+                    <button class="btn bg-common-color">LogIn</button>
+                   <a class=" btn btn-success text-white">Register</a>
+                </div>
+              </div>
+        </nav>
+
+        <h4 class="text-5xl font-semibold text-center mt-3">Freshness<span class="text-green-600"> You Can<br>
+            Count </span>On, Prices You’ll Love!</h4>
+
+        <img class="mx-auto py-5" src="./c2-assets/hero-vegetables.png"
+       
+    </header>
+
+    <!--main section-->
+    <main>
+       <section class=" max-w-screen-xl mx-auto px-8 lg:px-15">
+        <h3 class="text-4xl font-semibold text-green-600 ">SERVICES</h3>
+
+        <!--cards-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            <!--1st card-->
+            <div>
+                <div class="card bg-base-100 w-96 shadow-xl bg-gradient-to-tr from bg-green-200">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./c2-assets/service.png"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">24/7 Service</h2>
+                      <p class="text-gray-500">We are always ready to serve</p>
+                     
+                    </div>
+                  </div>
+            </div>
+            <!--2nd card-->
+            <div>
+                <div class="card bg-base-100 w-96 shadow-xlbg-gradient-to-tr from bg-green-200 ">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./c2-assets/delivery.png"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">Fast Delivary</h2>
+                      <p class="text-gray-500">Our drivers are always ready to delivar</p>
+                     
+                    </div>
+                  </div>
+            </div>
+            <!--3rd card-->
+            <div>
+                <div class="card bg-base-100 w-96 shadow-xlbg-gradient-to-tr from bg-green-200 ">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="./c2-assets/healthy.png"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold">Healthy Products</h2>
+                      <p class="text-gray-500">Healthy product for our life</p>
+                     
+                    </div>
+                  </div>
+            </div>
+        </div>
+       </section>
+    </main>
+
+    <!--footer section-->
+    <footer></footer>
+    
+</body>
+</html>
